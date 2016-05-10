@@ -15,22 +15,22 @@ get '/' do
   # File.read(File.join('reference.html'))
 end
 
-post '/' do
+post '/mail' do
 
-	Pony.options = {   
-                   :from           => "MIKE<mike@fusionrl.co>",
-                   :via            => :smtp,
-                   :via_options    => {
-                     :address        => 'smtp.sendgrid.net',
-                     :port           => '587',
-                     :user_name      => ENV['SENDGRID_USERNAME'],
-                     :password       => ENV['SENDGRID_PASSWORD'],
-                     :authentication => :plain, 
-                     :domain         => 'heroku.com'
-                    }
-                 }
-  Pony.mail(subject: "A message from the #{params[:name]}", to: 'mike@fusionrl.co', body: "#{params[:name]} #{params[:email]} #{params[:message]}")
+	# Pony.options = {   
+ #                   :from           => "MIKE<mike@fusionrl.co>",
+ #                   :via            => :smtp,
+ #                   :via_options    => {
+ #                     :address        => 'smtp.sendgrid.net',
+ #                     :port           => '587',
+ #                     :user_name      => ENV['SENDGRID_USERNAME'],
+ #                     :password       => ENV['SENDGRID_PASSWORD'],
+ #                     :authentication => :plain, 
+ #                     :domain         => 'heroku.com'
+ #                    }
+ #                 }
+ #  Pony.mail(subject: "A message from the #{params[:name]}", to: 'mike@fusionrl.co', body: "#{params[:name]} #{params[:email]} #{params[:message]}")
 
-    redirect '/' 
+  redirect '/' 
 end
 
