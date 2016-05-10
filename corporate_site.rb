@@ -2,6 +2,7 @@ require 'sinatra'
 require 'pony'
 
 configure :development do
+require 'better_errors'
   use BetterErrors::Middleware
   # you need to set the application root in order to abbreviate filenames
   # within the application:
