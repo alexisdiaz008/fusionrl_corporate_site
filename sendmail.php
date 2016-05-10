@@ -8,7 +8,7 @@ error_reporting(0);
 ob_start();
 
 // Recipient
-$to = 'John <mailjohn@example.com>';
+$to = 'Mike <mike@fusionrl.com>';
 // $to .= ', Jane <mailjane@example.com>';
 
 // Message subject
