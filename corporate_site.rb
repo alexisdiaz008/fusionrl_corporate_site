@@ -12,7 +12,7 @@ post '/' do
       from: "MIKE<mike@fusionrl.co>",
       to: 'mike@fusionrl.co',
       subject: "A message from the DAZ4126 website",
-      body: params[:name],params[:email],params[:message],
+      body: params[:message],
       port: '587',
       via: :smtp,
       via_options: { 
