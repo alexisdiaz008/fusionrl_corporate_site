@@ -14,6 +14,7 @@ get '/?' do
 end
 
 get '/mail' do
+  File.read(File.join('mail.html'))
   p request.path_info
   p request.fullpath 
   p request.url
