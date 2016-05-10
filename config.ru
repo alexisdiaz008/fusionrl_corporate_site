@@ -1,5 +1,5 @@
 require 'rubygems'
-require './fusionrl.rb'
+require './corporate_site.rb'
 
 require 'sinatra'
 require 'logger'
