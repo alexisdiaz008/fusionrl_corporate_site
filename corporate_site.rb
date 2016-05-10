@@ -11,19 +11,6 @@ end
 
 get '/' do
   File.read(File.join('index.html'))
-  	Pony.options = {   
-                   :from           => "MIKE<mike@fusionrl.co>",
-                   :via            => :smtp,
-                   :via_options    => {
-                     :address        => 'smtp.sendgrid.net',
-                     :port           => '587',
-                     :user_name      => ENV['SENDGRID_USERNAME'],
-                     :password       => ENV['SENDGRID_PASSWORD'],
-                     :authentication => :plain, 
-                     :domain         => 'heroku.com'
-                    }
-                 }
-  Pony.mail(subject: "A message from the #{params[:name]}", to: 'mike@fusionrl.co', body: "#{params[:name]} #{params[:email]} #{params[:message]}")
 end
 
 post '/mail' do
@@ -44,8 +31,4 @@ post '/mail' do
 	redirect('/')
 end
 
-get '/mail' do 
-  File.read(File.join('index.html'))
-	redirect('/')
-end
 
