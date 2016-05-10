@@ -31,6 +31,9 @@ post '/mail' do
  #                 }
  #  Pony.mail(subject: "A message from the #{params[:name]}", to: 'mike@fusionrl.co', body: "#{params[:name]} #{params[:email]} #{params[:message]}")
 
-  redirect('/')
+end
+
+get '/mail' do 
+	redirect('/')
 end
 
