@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'better_errors'
 require 'pony'
 
 configure :development do
