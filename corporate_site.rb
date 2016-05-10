@@ -9,11 +9,11 @@ configure :development do
   BetterErrors.application_root = File.expand_path('..', __FILE__)
 end
 
-get '/' do
+get '/?' do
   File.read(File.join('index.html'))
 end
 
-post '/mail' do
+post '/mail/?' do
 
 	# Pony.options = {   
  #                   :from           => "MIKE<mike@fusionrl.co>",
