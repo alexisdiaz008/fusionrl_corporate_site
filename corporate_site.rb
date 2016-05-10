@@ -14,7 +14,9 @@ get '/?' do
 end
 
 post '/mail' do
-
+  p request.path_info
+  p request.fullpath 
+  p request.url
 	# Pony.options = {   
  #                   :from           => "MIKE<mike@fusionrl.co>",
  #                   :via            => :smtp,
