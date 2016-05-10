@@ -1,2 +1,2 @@
-require './corporate_site.rb'
+require './fusionrl.rb'
 run Sinatra::Application
