@@ -113,6 +113,23 @@ body {
   font-family: 'Raleway', sans-serif;
   background: #fff;
 }
+.footer {
+    padding-top: 1.5em;
+  background-color: #111;
+  color: #fff;
+  font-size: 1em;
+  color: #aaa;
+   position:relative;
+   left:0px;
+   bottom:0px;
+   height:7em;
+   width:100%;
+}
+.footer a {
+  color: #aaa;
+  margin: 0 1em; 
+}
+
 img.features {
   width: 100%;
 }
