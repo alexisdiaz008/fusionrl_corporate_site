@@ -13,7 +13,7 @@ get '/?' do
   File.read(File.join('index.html'))
 end
 
-post '/mail' do
+get '/mail' do
   p request.path_info
   p request.fullpath 
   p request.url
