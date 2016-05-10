@@ -6,7 +6,7 @@ get '/' do
   # File.read(File.join('reference.html'))
 end
 
-post '/send' do
+post '/' do
     require 'pony'
     Pony.mail(
       from: "MIKE<mike@fusionrl.co>",
