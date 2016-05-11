@@ -9,11 +9,15 @@ $(function($) {
     var $body_html = $('body, html'),
         $html = $('html'),
         $body = $('body'),
+        $about = $('#about'),
 
         $navigation = $('#navigation'),
         navigation_height = $navigation.height() - 20,
-
+        about_height = $about.height() + 20,
         $scroll_to_top = $('#scroll-to-top'),
+        $scroll_to_about = $('#scroll-to-about'),
+        $scroll_to_home = $('#scroll-to-home'), 
+        $scroll_to_contact = $('#scroll-to-contact'),
 
         $preloader = $('#preloader'),
         $loader = $preloader.find('.loader');
@@ -83,6 +87,15 @@ $(function($) {
         } else {
             $scroll_to_top.removeClass('in');
         }
+    });
+    $('#scroll-to-contact').click(function() {
+        $.scrollWindow($('#contact').height());
+    });
+    $scroll_to_about.click(function() {
+        $.scrollWindow($('#about').height() - 260);
+    });
+    $scroll_to_home.click(function() {
+        $.scrollWindow(0);
     });
 
     $scroll_to_top.click(function() {

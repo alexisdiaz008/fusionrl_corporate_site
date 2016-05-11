@@ -115,8 +115,8 @@
                     <!-- Navigation -->
                     <div id="main-menu" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
+                            <li id="scroll-to-home" class="scroll-to-home"><a href="#">Home</a></li>
+                            <li id="scroll-to-about" class="scroll-to-about"><a href="#">About</a></li>
                             <li class="dropdown">
                                 <a href="/" class="dropdown-toggle">Products</a>
                                 <ul class="dropdown-menu">
@@ -133,7 +133,7 @@
                                     <li><a href="single-project.html">Project Page</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li id="scroll-to-contact" class="scroll-to-contact"><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /Navigation -->
@@ -163,7 +163,7 @@
                         <div class="text-white h4">
                             We Improve Recruitment Advertising Campaigns For the Fast-Growing Needs of Human Resource Departments.
                         </div>
-                        <a href="#about" class="smooth-scroll btn btn-theme">Request Demo</a>
+                        <a href="#" class="smooth-scroll btn btn-theme">Request Demo</a>
                     </div>
                 </div>
 
@@ -214,12 +214,12 @@
 <!-- Main -->
 <main class="main-container">
 
-    <!-- Section: About -->
-    <section id="about" class="section">
-        <div class="container">
-                <div class"row">
-       <img src="images/about.png" class="img-responsive">
+    <div class"row">
+       <img src="images/about.png" id="about" class="img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
     </div>
+    <!-- Section: About -->
+    <section class="section">
+        <div class="container">
             <div class="row">
 
                 <!-- Feature Block -->
@@ -264,7 +264,7 @@
     <!-- /Section: About -->
 
     <!-- Section: Projects -->
-    <img src="images/features.png" class="features img-responsive">
+    <img src="images/features.png" class="features img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
     <!-- /Section: Projects -->
 
     <!-- Section: Statistics -->
@@ -316,7 +316,7 @@
 
     <!-- Section: Best Features -->
     <div class"row">
-       <img src="images/partnership.png" class="img-responsive">
+       <img src="images/partnership.png" class="img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.4s">
     </div>
     <!-- /Section: Best Features -->
 
