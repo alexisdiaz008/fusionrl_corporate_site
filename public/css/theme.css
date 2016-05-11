@@ -963,6 +963,7 @@ label.error {
   vertical-align: middle;
 }
 .navbar .brand .logo-small {
+  height: 60px;
   display: none;
 }
 .navbar .brand .logo-big {
@@ -2284,6 +2285,7 @@ label.error {
     display: none !important;
   }
   .brand .logo-small {
+
     display: inline-block !important;
   }
   .slider {
