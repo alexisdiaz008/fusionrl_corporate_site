@@ -89,10 +89,10 @@ $(function($) {
         }
     });
         $('#scroll-to-features').click(function() {
-        $.scrollWindow($('#feature').height());
+        $.scrollWindow($('#feature').height()+500);
     });
     $('#scroll-to-contact').click(function() {
-        $.scrollWindow($('#contact').height());
+        $.scrollWindow(3800);
     });
     $scroll_to_about.click(function() {
         $.scrollWindow($('#about').height() - 150);
