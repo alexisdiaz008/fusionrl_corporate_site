@@ -92,7 +92,7 @@ $(function($) {
         $.scrollWindow($('#contact').height());
     });
     $scroll_to_about.click(function() {
-        $.scrollWindow($('#about').height() - 260);
+        $.scrollWindow($('#about').height() - 150);
     });
     $scroll_to_home.click(function() {
         $.scrollWindow(0);
