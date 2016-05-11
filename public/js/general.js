@@ -88,6 +88,9 @@ $(function($) {
             $scroll_to_top.removeClass('in');
         }
     });
+        $('#scroll-to-features').click(function() {
+        $.scrollWindow($('#feature').height());
+    });
     $('#scroll-to-contact').click(function() {
         $.scrollWindow($('#contact').height());
     });
