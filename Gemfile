@@ -3,6 +3,7 @@ gem 'rack'
 gem 'sinatra'
 gem 'pony'
 gem 'logger'
+gem 'mailcatcher'
 group :development do
   gem 'better_errors'
   # uncomment this for more advanced features:

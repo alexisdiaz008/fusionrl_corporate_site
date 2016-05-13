@@ -18,7 +18,7 @@ post '/mail' do
   # p request.fullpath 
   # p request.url
 	Pony.options = {   
-                   :from           => "MIKE<mike@fusionrl.co>",
+                   :from           => "#{params[:name]}<mike@fusionrl.co>",
                    :via            => :smtp,
                    :via_options    => {
                      :address        => 'smtp.sendgrid.net',
@@ -29,7 +29,7 @@ post '/mail' do
                      :domain         => 'heroku.com'
                     }
                  }
-  Pony.mail(subject: "A message from the #{params[:name]}", to: 'mike@fusionrl.co', body: "#{params[:name]} #{params[:email]} #{params[:message]}")
+  Pony.mail(subject: "A message from #{params[:name]}", to: 'support@fusionrl.com', body: "#{params[:name]} #{params[:email]} #{params[:message]}")
 	redirect('/?')
 end
 
