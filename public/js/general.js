@@ -94,6 +94,9 @@ $(function($) {
     $('#scroll-to-contact').click(function() {
         $.scrollWindow(3800);
     });
+    $('.scroll-to-contact').click(function() {
+        $.scrollWindow(3800);
+    });
     $scroll_to_about.click(function() {
         $.scrollWindow($('#about').height() - 150);
     });
