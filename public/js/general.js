@@ -89,13 +89,10 @@ $(function($) {
         }
     });
         $('#scroll-to-features').click(function() {
-        $.scrollWindow($('#feature').height()+500);
+        $.scrollWindow($('#feature').height()+350);
     });
     $('#scroll-to-contact').click(function() {
-        $.scrollWindow(3800);
-    });
-    $('.scroll-to-contact').click(function() {
-        $.scrollWindow(3800);
+        $.scrollWindow(2900);
     });
     $scroll_to_about.click(function() {
         $.scrollWindow($('#about').height() - 150);
