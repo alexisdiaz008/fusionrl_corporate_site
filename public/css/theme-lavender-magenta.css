@@ -892,7 +892,7 @@ label.error {
   float: left;
   padding-left: 7px;
   padding-right: 12px;
-  border-left: solid 1px #eee;
+  border-left: none;
   color: #777;
   font-weight: 100 !important;
 }

@@ -16,18 +16,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
-
-    <!-- TODO: Predefined Schemes (select one of the presented) -->
-    <link rel="alternate stylesheet" href="css/theme-persimmon.css" title="theme-persimmon">
-    <link rel="alternate stylesheet" href="css/theme-atomic-tangerine.css" title="theme-atomic-tangerine">
-    <link rel="alternate stylesheet" href="css/theme-yellow-sea.css" title="theme-yellow-sea">
-    <link rel="alternate stylesheet" href="css/theme-rio-grande.css" title="theme-rio-grande">
-    <link rel="alternate stylesheet" href="css/theme-vida-loca.css" title="theme-vida-loca">
-    <link rel="alternate stylesheet" href="css/theme-mountain-meadow.css" title="theme-mountain-meadow">
-    <link rel="alternate stylesheet" href="css/theme-java.css" title="theme-java">
-    <link rel="alternate stylesheet" href="css/theme-mariner.css" title="theme-mariner">
-    <link rel="alternate stylesheet" href="css/theme-medium-purple.css" title="theme-medium-purple">
-    <link rel="alternate stylesheet" href="css/theme-lavender-magenta.css" title="theme-lavender-magenta">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
 
 
 <script>
@@ -63,29 +52,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Header -->
 <header id="home" class="header">
-
     <!-- Navigation -->
-    <nav id="navigation" class="navbar affix">
+    <nav id="navigation" class="navbar"><!-- class"affix" makes an element stay on the screen, in this case the header-->
 
         <!-- Company Information -->
-        <div class="information hidden-sm hidden-xs">
+        <div class="information hidden-sm hidden-xs bottom-border-fade">
             <div class="container">
                 <div class="row">
 
                     <!-- Feedback -->
-                    <div class="col-md-8">
-                        <a href="https://maps.google.com/maps?q=280+NJ-35+%23302,+Red+Bank,+NJ+07701" class="iframe-popup"><span class="icon icon_pin_alt"></span> 280 Highway 35 South, Suite 302, Red Bank, NJ 07701</a>
-                        <a href="mailto:support@fusionrl.com"  target="_top"><span class="icon icon_mail_alt"></span> support@fusionrl.com</a>
-                        <a href="tel:844-205-2555"><span class="icon icon_phone"></span>844-205-2555</a>
+                    <div class="col-md-4">
                     </div>
                     <!-- /Feedback -->
 
                     <!-- Social -->
-                    <div class="col-md-5">
-<!--                         <ul class="social">
-                            <li><a href="https://www.facebook.com/findatruckerjob/" class="fa fa-fw fa-facebook"></a></li>
-                            <li><a href="https://twitter.com/findatruckerjob" class="fa fa-fw fa-twitter"></a></li>
-                        </ul> -->
+                    <div class="col-md-8">
+                        <a href="https://maps.google.com/maps?q=280+NJ-35+%23302,+Red+Bank,+NJ+07701" class="iframe-popup"><span class="icon icon_pin_alt"></span> 280 Highway 35 South, Suite 302, Red Bank, NJ 07701</a>
+                        <a href="mailto:support@fusionrl.com"  target="_top"><span class="icon icon_mail_alt"></span> support@fusionrl.com</a>
+                        <a href="tel:844-205-2555"><span class="icon icon_phone"></span>844-205-2555</a>
                     </div>
                     <!-- /Social -->
 
@@ -122,11 +106,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <a href="/" class="brand">
 
                             <!-- Logo Big -->
-                            <img src="images/fusionrl.png" class="logo-big">
+                            <img src="images/fusionrl-white.png" class="logo-big">
                             <!-- /Logo Big -->
 
                             <!-- Logo Small -->
-                            <img src="images/fusionrl.png" class="logo-small">
+                            <img src="images/fusionrl-white.png" class="logo-small">
                             <!-- /Logo Small -->
 
                         </a>
@@ -161,23 +145,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="slider owl-carousel owl-theme">
 
     <!-- Slide -->
-    <div class="item mask" style="background: url(images/rlbackground.png) no-repeat center top / cover;" data-stellar-background-ratio="0.4">
+    <div class="item mask" style="background: url(images/home-background.png) no-repeat center top / cover;" data-stellar-background-ratio="0.4">
 
         <div class="container height-100p">
             <div class="row height-100p">
 
                 <div class="col-sm-6 col-md-6 height-100p bounceInLeft wow" data-wow-duration="1.3s" data-wow-delay="0.3s" data-stellar-ratio="0.7">
                     <div class="vertical-middle">
-                        <h1 class="text-white">Fusion <span class="text-theme">Recruiting Labs</span></h1>
+                        <h1 class="text-white" style="margin: 0px;">
+                            Fusion Recruit 
+                            <!-- <span class="text-theme">Recruiting Labs</span> -->
+                        </h1>
+                        <h3 class="text-white">
+                            Making The Mobile Experience.
+                        </h3>
                         <div class="text-white h4">
-                            FusionRL empowers Recruiters and Candidates with cutting-edge mobile technology that increases mobile engagement and accelerates candidate placement.
+                            The Fusion Recruit platform offers innovative recruiters the tools they need to connect and engage with the mobile-first generation, today.
                         </div>
                         <li id="scroll-to-contact" class="scroll-to-contact" style="list-style:none;"><a href="#" id="scroll-to-contact" class="smooth-scroll btn btn-theme">Request Demo</a></li>
                     </div>
                 </div>
 
                 <div class="col-sm-6 col-md-4 col-md-offset-2 height-100p bounceInRight wow" data-wow-duration="1.3s" data-stellar-ratio="0.8">
-                    <div class="vertical-middle">
+                    <div class="vertical-below-middle">
                         <img src="images/iphonehand.png" class="img-responsive">
                     </div>
                 </div>
@@ -224,42 +214,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Section: About -->
     <section class="section">
       <div class"row">
-          <div class="col-sm-5 col-md-5" style="text-align:-webkit-center;">
-            <img src="images/about.png" id="about" class="img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
-          </div>
-          <div class="col-sm-7 col-md-7">
-                <h1 class="text-black" style="margin:30px 0 0;font-weight:bold;">Introducing</h1>
-                <h1 class="text-theme" style="margin:0 0 10px;font-weight:bold;">Fusion Recruit</h1>
-                <div class="text-black h4" style="font-weight:bold;">
-                  The FIRST mobile-first candidate search experience platform built for agency and corporate recruiters.
-                </div>
-                <div class="text-black h4" style="font-weight:bold;">
-                  <span class="fa fa-angle-double-right text-theme"></span> Increases Mobile Candidate application rates
-                </div>
-                <div class="text-black h4" style="font-weight:bold;">
-                  <span class="fa fa-angle-double-right text-theme"></span> Filters unqualified candidates to increase Recruiter Productivity
-                </div>
-                <div class="text-black h4" style="font-weight:bold;">
-                  <span class="fa fa-angle-double-right text-theme"></span> Customized to Company Brand & Experience
-                </div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:-webkit-center;max-height:66em;">
+            <img src="images/mobile-challenges.png" id="about" class="img-responsive fadeIn wow mobile-challenges" data-wow-duration="1s" data-wow-delay="0s">
         </div>
       </div>
     </section>
     <!-- /Section: About -->
 
-    <!-- Section: features -->
-    <img src="images/features.png" id="feature" class="features img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
+    <!-- Section: how it works -->
+    <img src="images/how-it-works.png" id="feature" class="features img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
+    <!-- /Section: features -->
+    <div class="container inner-padding">
+        <div class="sub-header grey-text center">Know what we do</div>
+        <div class="headline text-theme center">CASE STUDY</div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" id="no-padding">
+              <img src="images/starpoint.png" id="about" class="img-responsive fadeIn wow handshake" data-wow-duration="1.3s" data-wow-delay="0.8s">
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" id="no-padding">
+            <img src="images/starpoint-logo.png" id="about" class="img-responsive fadeIn wow starpoint-logo" data-wow-duration="1.3s" data-wow-delay="0.8s">
+            <h4 class="article-header">Starpoint Solutions (A Yoh...)</h4>
+              <p class="article-preview-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <a href="" class="btn btn-theme">View More</a>
+          </div>
+        </div>
+    </div>
+    <!-- Section: how it works -->
+    <img src="images/key-features.png" id="feature" class="features img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
     <!-- /Section: features -->
 
     <!-- Section: Statistics -->
-    <section id="statistics" class="section bg-tuna">
+    <section id="statistics" class="section" style="margin-bottom:3em;">
         <div class="container">
-
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <header class="text-center">
-                        <h2 class="section-title" style="color:white;margin-bottom:45px;">What are the <span class="text-theme">benefits?</span></h2>
-                        <h3 class="section-title" style="color:white;margin-bottom:50px;">In live product tests, our clients enjoyed</h3>
+                      <div class="sub-header grey-text center">In live product tests, our clients enjoyed</div>
+                      <div class="headline text-theme center">What are the benefits?</div>
                         <p class="section-subtitle"></p>
                     </header>
                 </div>
@@ -267,27 +261,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="row">
                 <!-- Statistic Block -->
                 <div class="col-sm-4 col-xs-12 stat">
-                    <span class="icon_group icon zoomIn wow" data-wow-duration="0.7s"></span>
-                    <span class="number animate-number h2" data-value="400"></span><span style="font-size:20px;
-    color: white;"> %</span>
+                  <span class="icon zoomIn wow">
+                    <span class="number animate-number h2" data-value="400" data-wow-duration="0.7s"></span>
+                    <span class="percent">%</span>
+                  </span>
                     <h4 class="title bounceInUp wow" data-wow-duration="0.7s">Increase in Mobile Applications received</h4>
                 </div>
                 <!-- /Statistic Block -->
 
                 <!-- Statistic Block -->
-                <div class="col-sm-4 col-xs-12 stat">
-                    <span class="fa fa-money icon zoomIn wow" data-wow-duration="0.7s"></span>
-                    <span class="number animate-number h2" data-value="80"></span><span style="font-size:20px;
-    color: white;"> %</span>
+                <div class="col-sm-4 col-xs-12 stat vertical-stripes">
+                  <span class="icon zoomIn wow">
+                    <span class="number animate-number h2" data-value="80" data-wow-duration="0.7s"></span>
+                    <span class="percent">%</span>
+                  </span>
                     <h4 class="title bounceInUp wow" data-wow-duration="0.7s">Decrease in Cost per Mobile Apply</h4>
                 </div>
                 <!-- /Statistic Block -->
 
                 <!-- Statistic Block -->
                 <div class="col-sm-4 col-xs-12 stat">
-                    <span class="fa fa-clock-o icon zoomIn wow" data-wow-duration="0.7s"></span>
-                    <span class="number animate-number h2" data-value="44"></span><span style="font-size:20px;
-    color: white;"> %</span>
+                  <span class="icon zoomIn wow">
+                    <span class="number animate-number h2" data-value="44" data-wow-duration="0.7s"></span>
+                    <span class="percent">%</span>
+                  </span>
                     <h4 class="title bounceInUp wow" data-wow-duration="0.7s">Decrease in Total Cost per Apply</h4>
                 </div>
                 <!-- /Statistic Block -->
@@ -297,71 +294,93 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </section>
     <!-- /Section: Statistics -->
 
-    <!-- Section: Best Features -->
-    <!-- <div class"row">
-       <img src="images/partnership.png" class="img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.4s">
-    </div> -->
-    <!-- /Section: Best Features -->
+    <div class="demo-section">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" id="no-padding">
+            <img src="images/macbook-and-phone.png" id="about" class="img-responsive fadeIn wow mac-and-phone" data-wow-duration="1.3s" data-wow-delay="0.8s">
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" id="no-padding">
+          <h4 class="demo-header">REQUEST DEMO?</h4>
+            <p class="text-white">
+              Find out how Fusion Recruit can supercharge your <br> mobile candidate engagement efforts! 
+            </p>
+            <a href="" class="btn btn-theme">Schedule Demo</a>
+        </div>
+      </div>
+    </div>
 
-    <!-- Section: Testimonials -->
-    <!-- /Section: Testimonials -->
+    <div class="container endorsements-inner-padding">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12" id="no-padding">
+          <img src="images/fatj-wide-logo.png" id="about" class="img-responsive fadeIn wow logo-endorsements" data-wow-duration="1.3s" data-wow-delay="0.8s">
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12" id="no-padding">
+          <img src="images/zip-logo.png" id="about" class="img-responsive fadeIn wow logo-endorsements" data-wow-duration="1.3s" data-wow-delay="0.8s">
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12" id="no-padding">
+          <img src="images/indeed-logo.png" id="about" class="img-responsive fadeIn wow logo-endorsements" data-wow-duration="1.3s" data-wow-delay="0.8s">
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12" id="no-padding">
+          <img src="images/dice-logo.png" id="about" class="img-responsive fadeIn wow logo-endorsements" data-wow-duration="1.3s" data-wow-delay="0.8s">
+      </div>
+    </div>
+
 
     <!-- Section: Contact -->
-    <section class="section">
-        <div class="container">
+    <!-- <section class="section"> -->
+        <!-- <div class="container"> -->
 
             <!-- Section Header -->
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <header class="text-center">
-                        <h2 class="section-title"> Connect with <span class="text-theme">us</span></h2>
-                    </header>
-                </div>
-            </div>
+            <!-- <div class="row"> -->
+                <!-- <div class="col-md-6 col-md-offset-3"> -->
+                    <!-- <header class="text-center"> -->
+                        <!-- <h2 class="section-title"> Connect with <span class="text-theme">us</span></h2> -->
+                    <!-- </header> -->
+                <!-- </div> -->
+            <!-- </div> -->
             <!-- /Section Header -->
 
             <!-- Section Content -->
-            <div class="row section-content">
+            <!-- <div class="row section-content"> -->
 
                 <!-- Contact Form -->
-                <p class="section-subtitle text-center">Have a question? Need to tell us something? Use the form below and we’ll get back to you quickly!</p><br>
+                <!-- <p class="section-subtitle text-center">Have a question? Need to tell us something? Use the form below and we’ll get back to you quickly!</p><br> -->
 
-                <div  id="contact" class="col-md-8 col-md-offset-2 contact-form fadeIn wow">
-                    <form action="/mail" method="post">
+                <!-- <div  id="contact" class="col-md-8 col-md-offset-2 contact-form fadeIn wow"> -->
+                    <!-- <form action="/mail" method="post"> -->
 
-                        <input type="hidden" name="form" value="Contact">
+                        <!-- <input type="hidden" name="form" value="Contact"> -->
 
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name... *" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="email" name="email" class="form-control" placeholder="E-mail address... *" required>
-                            </div>
-                        </div>
+                        <!-- <div class="row"> -->
+                            <!-- <div class="form-group col-md-6"> -->
+                                <!-- <input type="text" name="name" class="form-control" placeholder="Your Name... *" required> -->
+                            <!-- </div> -->
+                            <!-- <div class="form-group col-md-6"> -->
+                                <!-- <input type="email" name="email" class="form-control" placeholder="E-mail address... *" required> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
 
-                        <div class="row">
-                            <div class="form-group col-md-12">
-                                <textarea name="message" class="form-control" placeholder="Message... "></textarea>
-                            </div>
-                        </div>
+                        <!-- <div class="row"> -->
+                            <!-- <div class="form-group col-md-12"> -->
+                                <!-- <textarea name="message" class="form-control" placeholder="Message... "></textarea> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
 
-                        <div class="row">
-                            <div class="form-group col-md-12 text-center">
-                                <button type="submit" value="Send" class="btn btn-theme"><i class="fa fa-fw fa-paper-plane-o"></i> Send Message</button>
-                            </div>
-                        </div>
+                        <!-- <div class="row"> -->
+                            <!-- <div class="form-group col-md-12 text-center"> -->
+                                <!-- <button type="submit" value="Send" class="btn btn-theme"><i class="fa fa-fw fa-paper-plane-o"></i> Send Message</button> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
 
-                    </form>
-                </div>
+                    <!-- </form> -->
+                <!-- </div> -->
                 <!-- /Contact Form -->
 
 
-            </div>
+            <!-- </div> -->
             <!-- /Section Content -->
 
-        </div>
-    </section>
+        <!-- </div> -->
+    <!-- </section> -->
     <!-- /Section: Contact -->
 
 </main>
@@ -370,15 +389,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Footer -->
 <!-- Footer Starts -->
 <div class="footer text-center spacer">
-
-      <!-- Feedback -->
-      <div class="col-md-12">
-          <a href="https://maps.google.com/maps?q=280+NJ-35+%23302,+Red+Bank,+NJ+07701" class="iframe-popup"><span class="icon icon_pin_alt"></span> 280 Highway 35 South, Suite 302, Red Bank, NJ 07701</a>
-          <a href="mailto:support@fusionrl.com"  target="_top"><span class="icon icon_mail_alt"></span> support@fusionrl.com</a>
-          <span class="icon icon_phone"></span><a href="tel:844-205-2555">844-205-2555</a>
+    <div class="row">
+      <div class="col-md-3">
+        <img src="images/fusionrl-white.png" class="logo-footer">
       </div>
-
-    Copyright 2016 Fusion Recruiting Labs, Inc. All rights reserved.
+      <div class="col-md-7">
+        <ul class="nav navbar-nav navbar-right">
+          <li id="scroll-to-home" class="scroll-to-home"><a href="#">Home</a></li>
+          <li id="scroll-to-about" class="scroll-to-about"><a href="#">About</a></li>
+          <li id="scroll-to-features" class="scroll-to-features"><a href="#">Features</a></li>
+          <li id="scroll-to-contact" class="scroll-to-contact" style="text-decoration:none;"><a href="#">Contact</a></li>
+          <li id="scroll-to-contact" style="text-decoration:none;"><a href="https://recruit.fusion-recruit.com/3/job_descriptions">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+      <!-- Feedback -->
+      <div class="row">
+        <div class="col-md-12">
+            Copyright 2016 Fusion Recruiting Labs, Inc. All rights reserved.
+            <a href="https://maps.google.com/maps?q=280+NJ-35+%23302,+Red+Bank,+NJ+07701" class="iframe-popup"><span class="icon icon_pin_alt"></span> 280 Highway 35 South, Suite 302, Red Bank, NJ 07701</a>
+            <a href="mailto:support@fusionrl.com"  target="_top"><span class="icon icon_mail_alt"></span> support@fusionrl.com</a>
+            <span class="icon icon_phone"></span><a href="tel:844-205-2555">844-205-2555</a>
+        </div>
+      </div>
 </div>
 <!-- /Footer -->
 
@@ -389,34 +424,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- /Scroll To Top -->
 
 <!-- Modal: Result Message -->
-<div class="modal fade" id="result" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
+<!-- <div class="modal fade" id="result" role="dialog"> -->
+    <!-- <div class="modal-dialog"> -->
+        <!-- <div class="modal-content"> -->
 
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    <i class="fa fa-times"></i>
-                </button>
-                <h4 class="modal-title">Sending message</h4>
-            </div>
+            <!-- <div class="modal-header"> -->
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> -->
+                    <!-- <i class="fa fa-times"></i> -->
+                <!-- </button> -->
+                <!-- <h4 class="modal-title">Sending message</h4> -->
+            <!-- </div> -->
 
-            <div class="modal-body">
+            <!-- <div class="modal-body"> -->
 
-                <div class="result-icon">
-                    <div class="icon-border">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" preserveAspectRatio="none">
-                            <circle cx="8" cy="8" r="6.215" transform="rotate(90 8 8)"></circle>
-                        </svg>
-                        <i class="icon fa fa-check"></i>
-                    </div>
-                </div>
+                <!-- <div class="result-icon"> -->
+                    <!-- <div class="icon-border"> -->
+                        <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" preserveAspectRatio="none"> -->
+                            <!-- <circle cx="8" cy="8" r="6.215" transform="rotate(90 8 8)"></circle> -->
+                        <!-- </svg> -->
+                        <!-- <i class="icon fa fa-check"></i> -->
+                    <!-- </div> -->
+                <!-- </div> -->
 
-                <p class="modal-result h4 text-center"></p>
-            </div>
+                <!-- <p class="modal-result h4 text-center"></p> -->
+            <!-- </div> -->
 
-        </div>
-    </div>
-</div>
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </div> -->
 <!-- /Modal: Result Message -->
 
 <!-- SCRIPTS -->

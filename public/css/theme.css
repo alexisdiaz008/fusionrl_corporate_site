@@ -104,25 +104,164 @@ html {
   min-height: 100%;
 }
 body {
+  font-weight: bold;
   height: 100%;
   min-height: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: #777;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
-  background: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  background: #f2f3f8;
 }
+.demo-header { 
+  margin: 4em 0 2em 0;
+  color: white;
+  font-weight: bold;
+}
+.demo-section {
+  padding: 0em 0 9em 0;
+  margin:0;
+  min-height: 25em;
+  background-image: url('../images/request-bg.png');
+  background-position: 10% 100%;
+}
+.mac-and-phone {
+  margin: -3em 0 0 0;
+  min-height: 387px;
+}
+.logo-endorsements {
+  display: block;
+  margin: auto;
+}
+.article-preview-text {
+  line-height: 24px;
+}
+.article-header{
+  font-weight: bold;
+}
+div.headline.text-theme.center {
+  margin-bottom: 2em;  
+}
+div.sub-header.grey-text.center {
+ margin-bottom: 0.4em;
+}
+.handshake {
+  height: 350px;
+}
+.starpoint-logo {
+  margin-bottom: 2em;
+}
+
+.grey-text {
+  color: #999999;
+  font-size: 1.2em;
+}
+.inner-padding {
+  padding: 5em 0 8em 0;
+}
+
+.endorsements-inner-padding {
+  padding: 8em 0 8em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+}
+.mobile-challenges {
+  box-shadow: 5px 10px 73px #888888;
+  position: inherit;
+  top:-270px;
+}
+
+.vertical-below-middle {
+  position: relative;
+  top: 74%;
+  right: 50px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .vertical-below-middle {
+    right: -14%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .vertical-below-middle {
+    right: -35%;
+  }
+}
+@media (min-width: 1800px) {
+  .vertical-below-middle {
+    right: -55%;
+  }
+}
+@media (min-width: 1960px) {
+  .vertical-below-middle {
+    right: -85%;
+  }
+}
+@media (min-width: 2180px) {
+  .vertical-below-middle {
+    right: -100%;
+  }
+}
+@media (min-width: 2180px) {
+  .vertical-below-middle {
+    right: -120%;
+  }
+}
+@media (min-width: 2400px) {
+  .vertical-below-middle {
+    right: -140%;
+  }
+}
+@media (min-width: 2600px) {
+  .vertical-below-middle {
+    right: -190%;
+  }
+}
+/*@media (min-width: 2100px) {
+  .container {
+    width: 100%;
+  }
+}*/
+
 .footer {
     padding-top: 1.5em;
-  background-color: #111;
+  background-color: #444444;
   color: #fff;
   font-size: 1em;
   color: #aaa;
    position:relative;
    left:0px;
    bottom:0px;
-   height:7em;
+   height:11em;
    width:100%;
 }
 .footer a {
@@ -143,8 +282,9 @@ img.features {
   vertical-align: middle;
 }
 .height-100p {
-  height: 107%;
+  height: 100%;
 }
+
 .vertical-middle {
   position: relative;
   top: 50%;
@@ -156,7 +296,7 @@ img.features {
 }
 .main-container {
   z-index: 2;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .section {
   padding-top: 100px;
@@ -876,7 +1016,7 @@ label.error {
   margin-bottom: 0;
   min-height: 1px;
   font-size: 13px;
-  background: #fff;
+  background: none;
   border: none;
   /*
    * Navigation Style: Fill
@@ -891,6 +1031,22 @@ label.error {
    *-----------------------------*/
   /* /Affixed Navigation */
 }
+
+/*after top row border fade*/
+.bottom-border-fade { 
+    margin: auto;
+}
+
+.bottom-border-fade:after {
+    content: "";
+    height: 1px;
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 100%);
+
+display: block;
+/*margin-bottom: 10px;*/
+    /*margin-top: 10px;*/
+}
+
 .navbar .information {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -898,21 +1054,21 @@ label.error {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
-  height: 32px;
+  height: 54px;
   font-weight: 100;
   line-height: 32px;
-  border-bottom: solid 1px #eee;
+  /*border-bottom: solid 1px #eee;*/
 }
 .navbar .information i.fa {
   font-size: 12px;
 }
 .navbar .information a {
+  padding: 9px 0;
   display: block;
   float: left;
   padding-left: 7px;
   padding-right: 12px;
-  border-left: solid 1px #eee;
-  color: #777;
+  color: white;
   font-weight: 100 !important;
 }
 .navbar .information a .icon {
@@ -976,7 +1132,7 @@ label.error {
 .navbar .nav li a {
   margin: 15px 5px;
   padding: 7px 15px;
-  color: #777;
+  color: white;
   text-shadow: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1125,7 +1281,7 @@ label.error {
   max-width: 100%;
 }
 .slider .item {
-  height: 500px;
+  height: 900px;
   max-width: 100%;
   overflow: hidden;
 }
@@ -1173,9 +1329,9 @@ label.error {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .6;
+  /*opacity: .6;*/
   z-index: 0;
-  background: #000;
+  /*background: #000;*/
 }
 /*
  * OWL.Carousel fadeUp
@@ -1330,6 +1486,20 @@ label.error {
 /*--------------------------------------------------------------------------------------------------------------------
  * Section: Statistics
  *--------------------------------------------------------------------------------------------------------------------*/
+.percent {
+  font-weight: 300;
+  font-size: 30px;
+  color: #FF6603
+}
+
+.vertical-stripes {
+  border: 1.5px solid;
+  border-top: 0;
+  border-bottom: 0;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FF6603 50%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+}
+
 .stat {
   text-align: center;
 }
@@ -1352,12 +1522,14 @@ label.error {
   line-height: 96px;
   margin: 0 auto 30px;
   border: solid 1px #fff;
+  background: white;
+  box-shadow: 5px 10px 73px #888888;
 }
 .stat .number {
   color: #FF6603;
 }
 .stat .title {
-  color: #fff;
+  color: #999999;
   margin-bottom: 0;
 }
 .stat:hover .icon {
@@ -1365,7 +1537,7 @@ label.error {
   border-color: #FF6603;
 }
 .stat:hover .number {
-  color: #fff;
+  /*color: #fff;*/
 }
 .stat:hover .title {
   color: #FF6603;
@@ -1658,10 +1830,7 @@ label.error {
 /*--------------------------------------------------------------------------------------------------------------------
  * Footer
  *--------------------------------------------------------------------------------------------------------------------*/
-.footer {
-  border-top: solid 2px #FF6603;
-  padding-bottom: 10px;
-}
+
 .footer p {
   margin-bottom: 10px;
 }
@@ -1977,6 +2146,13 @@ label.error {
  *------------------*/
 .project-carousel {
   margin-bottom: 130px;
+}
+
+div.slider.owl-carousel.owl-theme {
+  /*height: 500px;*/
+  top: -100px;
+  max-width: 100%;
+  overflow: hidden;
 }
 .project-carousel .owl-wrapper-outer {
   z-index: 1;
