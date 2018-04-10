@@ -89,18 +89,17 @@ $(function($) {
         }
     });
         $('#scroll-to-features').click(function() {
-        $.scrollWindow($('#feature').height()+350);
+        $.scrollWindow($('#feature').height()+1050);
     });
     $('#scroll-to-contact').click(function() {
         $.scrollWindow(2900);
     });
     $scroll_to_about.click(function() {
-        $.scrollWindow($('#about').height() - 150);
+        $.scrollWindow($('#about').height() + 350);
     });
     $scroll_to_home.click(function() {
         $.scrollWindow(0);
     });
-
     $scroll_to_top.click(function() {
         $.scrollWindow(0);
     });
