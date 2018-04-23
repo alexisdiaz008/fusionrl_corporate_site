@@ -13,12 +13,16 @@ get '/?' do
   File.read(File.join('index.html'))
 end
 
+get '/contact' do
+  File.read(File.join('contact.html'))
+end
+
 post '/mail' do
   # p request.path_info
   # p request.fullpath 
   # p request.url
 	Pony.options = {   
-                   :from           => "#{params[:name]}<mike@fusionrl.co>",
+                   :from           => "#{params[:name]}<lex@fusionrl.co>",
                    :via            => :smtp,
                    :via_options    => {
                      :address        => 'smtp.sendgrid.net',

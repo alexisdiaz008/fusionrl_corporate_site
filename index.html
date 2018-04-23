@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
 
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,7 +26,6 @@
 
   ga('create', 'UA-73541965-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </head>
     <script type="text/javascript"> 
@@ -124,8 +122,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <ul class="nav navbar-nav navbar-right">
                             <li id="scroll-to-home" class="scroll-to-home"><a href="#">Home</a></li>
                             <li id="scroll-to-about" class="scroll-to-challenges"><a href="#">Mobile Challenges</a></li>
-                            <li id="scroll-to-features" class="scroll-to-features"><a href="#">How It Works</a></li>
-                            <li id="scroll-to-contact" class="scroll-to-contact" style="text-decoration:none;"><a href="#">Contact</a></li>
+                            <!-- <li id="scroll-to-features" class="scroll-to-features"><a href="#">How It Works</a></li> -->
+                            <li id="scroll-to-contact" class="scroll-to-contact" style="text-decoration:none;"><a href="/contact">Contact</a></li>
                             <li id="scroll-to-contact" style="text-decoration:none;"><a href="https://recruit.fusion-recruit.com/3/job_descriptions">Careers</a></li>
                         </ul>
                     </div>
@@ -162,7 +160,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="text-white h4">
                             The Fusion Recruit platform offers innovative recruiters the tools they need to connect and engage with the mobile-first generation, today.
                         </div>
-                        <li id="scroll-to-contact" class="scroll-to-contact" style="list-style:none;"><a href="#" id="scroll-to-contact" class="smooth-scroll btn btn-theme">Request Demo</a></li>
+                        <li id="scroll-to-contact" class="scroll-to-contact" style="list-style:none;"><a href="/contact" id="scroll-to-contact" class="smooth-scroll btn btn-theme">Request Demo</a></li>
                     </div>
                 </div>
 
@@ -212,20 +210,130 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Main -->
 <main class="main-container">
     <!-- Section: About -->
-    <section class="section">
+    <section class="section" style="padding:0;">
       <div class"row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:-webkit-center;max-height:66em;">
-            <img src="images/mobile-challenges.png" id="challenges" class="img-responsive fadeIn wow mobile-challenges" data-wow-duration="1s" data-wow-delay="0s">
+        <div class="mobile-challenges col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:-webkit-center;">
+            <img src="images/mobile-challenges.png" id="challenges" class="img-responsive fadeIn wow mobile-challenges-img" data-wow-duration="1s" data-wow-delay="0s">
         </div>
       </div>
     </section>
     <!-- /Section: About -->
 
     <!-- Section: how it works -->
-    <img src="images/how-it-works.png" id="feature" class="features img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0s">
-    <!-- /Section: features -->
+    <!-- Slider -->
+
+    <!-- <img src="images/how-it-works.png" id="feature" class="features img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0s"> -->
+
+<div class="slider owl-carousel owl-theme how-it-works">
+    <!-- Slide -->
+    <div class="item mask how-it-works-bg" style="background: url(images/fenchurch-street.png) no-repeat center top / cover;" data-stellar-background-ratio="0.4">
+      <div class="height-100p">
+        <div class="row height-100p">
+          <span class="col-sm-12 col-md-12 headline text-theme center fadeIn" style="margin: 2em 0 -3em 0;">HOW IT WORKS</span>
+            <div class="col-sm-6 col-md-6 height-100p bounceInLeft wow" data-wow-duration="1.3s" data-wow-delay="0.3s" data-stellar-ratio="0.7">
+              <div class="vertical-middle">
+                  <img src="images/how_it_works_1.png" style="width:100%;" class="slide-1">
+              </div>
+            </div>
+          <div class="col-sm-4 col-md-4 height-100p fadeIn wow" data-wow-duration="1.3s" data-stellar-ratio="0.8">
+          <div class="text-white h4 vertical-middle" style="padding:1em;">
+            <div class="p-header">
+              Job Distribution
+            </div>
+            <img src="images/white-rect.png" class="white-rect-und">
+            <div>
+              Fusion Recruit’s mobile-first job application was
+              designed with elements of gamification that simplifies the user experience and allows candidates to complete the application quickly and easily. 
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 col-md-2 height-100p bounceInRight wow" data-wow-duration="1.3s" data-wow-delay="0.3s" data-stellar-ratio="0.7">
+          <div class="vertical-middle" style="padding: 0 3em;">
+            <div class="text-white h4 p-header">
+              Job Application
+            </div>
+              <img src="images/slide-2-ellipse.png" class="img-responsive slide-ellipse">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Slide -->
+
+    <!-- Slide -->
+    <div class="item mask how-it-works-bg" style="background: url(images/fenchurch-street.png) no-repeat center top / cover;" data-stellar-background-ratio="0.4">
+      <div class="height-100p">
+        <div class="row height-100p">
+          <span class="col-sm-12 col-md-12 headline text-theme center fadeIn" style="margin: 2em 0 -3em 0;">HOW IT WORKS</span>
+            <div class="col-sm-6 col-md-6 height-100p bounceInLeft wow" data-wow-duration="1.3s" data-wow-delay="0.3s" data-stellar-ratio="0.7">
+              <div class="vertical-middle" style="padding-top:8em;">
+                  <img src="images/how_it_works_2.png" style="width:100%;">
+              </div>
+            </div>
+          <div class="col-sm-4 col-md-4 height-100p fadeIn wow" data-wow-duration="1.3s" data-stellar-ratio="0.8">
+          <div class="text-white h4 vertical-middle" style="padding:1em;">
+            <div class="p-header">
+              Job Application
+            </div>
+            <img src="images/white-rect.png" class="white-rect-und">
+            <div>
+              Fusion Recruit’s mobile-first job application was
+              designed with elements of gamification that simplifies the user experience and allows candidates to complete the application quickly and easily. 
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 col-md-2 height-100p bounceInRight wow" data-wow-duration="1.3s" data-wow-delay="0.3s" data-stellar-ratio="0.7">
+          <div class="vertical-middle" style="padding: 0 2em;">
+            <div class="text-white h4 p-header">
+              Screening Process
+            </div>
+              <img src="images/slide-3-ellipse.png" class="img-responsive slide-ellipse">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Slide -->
+
+    <!-- Slide -->
+    <div class="item mask how-it-works-bg" style="background: url(images/fenchurch-street.png) no-repeat center top / cover;" data-stellar-background-ratio="0.4">
+      <div class="height-100p">
+        <div class="row height-100p">
+          <span class="col-sm-12 col-md-12 headline text-theme center fadeIn" style="margin: 2em 0 -3em 0;">HOW IT WORKS</span>
+            <div class="col-sm-6 col-md-6 height-100p bounceInLeft wow" data-wow-duration="1.3s" data-wow-delay="0.3s" data-stellar-ratio="0.7">
+              <div class="vertical-middle">
+                  <img src="images/how_it_works_3.png" style="width:100%;">
+              </div>
+            </div>
+          <div class="col-sm-4 col-md-4 height-100p fadeIn wow" data-wow-duration="1.3s" data-stellar-ratio="0.8">
+          <div class="text-white h4 vertical-middle" style="padding:1em;">
+            <div class="p-header">
+              Screening Process
+            </div>
+            <img src="images/white-rect.png" class="white-rect-und">
+            <div>
+              Fusion Recruit’s mobile-first job application was
+              designed with elements of gamification that simplifies the user experience and allows candidates to complete the application quickly and easily. 
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 col-md-2 height-100p bounceInRight wow" data-wow-duration="1.3s" data-wow-delay="0.3s" data-stellar-ratio="0.7">
+          <div class="vertical-middle" style="padding: 0 3em;">
+            <div class="text-white h4 p-header">
+              Job Distribution
+            </div>
+              <img src="images/slide-1-ellipse.png" class="img-responsive slide-ellipse">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Slide -->
+</div>
+<!-- /Slider -->    
+    <!-- /Section: testimonials -->
     <div class="container inner-padding">
-        <div class="sub-header grey-text center">Know what we do</div>
+        <div class="sub-header grey-text center">Fusion Recruit in action</div>
         <div class="headline text-theme center">CASE STUDY</div>
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 hidden-xs" id="no-padding">
@@ -243,7 +351,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </div>
     <!-- Section: how it works -->
-    <img src="images/key-features.png" id="feature" class="features img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0s">
+    <img src="images/app.png" id="feature" class="features img-responsive fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0s">
     <!-- /Section: features -->
 
     <!-- Section: Statistics -->
@@ -305,7 +413,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="text-white">
               Find out how Fusion Recruit can supercharge your <br> mobile candidate engagement efforts! 
             </p>
-            <a href="" class="btn btn-theme">Schedule Demo</a>
+            <a href="/contact" class="btn btn-theme">Schedule Demo</a>
           </div>
           <div class="col-sm-6">
             <img src="images/macbook-and-phone.png" id="about" class="img-responsive fadeIn wow mac-and-phone hidden-xl hidden-lg hidden-md hidden-xs" data-wow-duration="1.3s" data-wow-delay="0s">
@@ -330,71 +438,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 
 
-    <!-- Section: Contact -->
-    <!-- <section class="section"> -->
-        <!-- <div class="container"> -->
-
-            <!-- Section Header -->
-            <!-- <div class="row"> -->
-                <!-- <div class="col-md-6 col-md-offset-3"> -->
-                    <!-- <header class="text-center"> -->
-                        <!-- <h2 class="section-title"> Connect with <span class="text-theme">us</span></h2> -->
-                    <!-- </header> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- /Section Header -->
-
-            <!-- Section Content -->
-            <!-- <div class="row section-content"> -->
-
-                <!-- Contact Form -->
-                <!-- <p class="section-subtitle text-center">Have a question? Need to tell us something? Use the form below and we’ll get back to you quickly!</p><br> -->
-
-                <!-- <div  id="contact" class="col-md-8 col-md-offset-2 contact-form fadeIn wow"> -->
-                    <!-- <form action="/mail" method="post"> -->
-
-                        <!-- <input type="hidden" name="form" value="Contact"> -->
-
-                        <!-- <div class="row"> -->
-                            <!-- <div class="form-group col-md-6"> -->
-                                <!-- <input type="text" name="name" class="form-control" placeholder="Your Name... *" required> -->
-                            <!-- </div> -->
-                            <!-- <div class="form-group col-md-6"> -->
-                                <!-- <input type="email" name="email" class="form-control" placeholder="E-mail address... *" required> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-
-                        <!-- <div class="row"> -->
-                            <!-- <div class="form-group col-md-12"> -->
-                                <!-- <textarea name="message" class="form-control" placeholder="Message... "></textarea> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-
-                        <!-- <div class="row"> -->
-                            <!-- <div class="form-group col-md-12 text-center"> -->
-                                <!-- <button type="submit" value="Send" class="btn btn-theme"><i class="fa fa-fw fa-paper-plane-o"></i> Send Message</button> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-
-                    <!-- </form> -->
-                <!-- </div> -->
-                <!-- /Contact Form -->
-
-
-            <!-- </div> -->
-            <!-- /Section Content -->
-
-        <!-- </div> -->
-    <!-- </section> -->
-    <!-- /Section: Contact -->
-
 </main>
 <!-- /Main -->
 
 <!-- Footer -->
 <!-- Footer Starts -->
 <div class="footer text-center spacer container">
-    <div class="row footer-top-row" style="margin:0;">
+    <div class="row footer-top-row">
       <div class="col-md-3 col-sm-12 col-xs-12">
         <img src="images/fusionrl-white.png" class="logo-footer">
       </div>
@@ -407,15 +457,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li style="text-decoration:none;"><a href="https://recruit.fusion-recruit.com/3/job_descriptions">Careers</a></li>
         </ul>
       </div>
-      <!-- <div class="col-md-2"> -->
-        <!-- <span>Twitter</span> -->
-        <!-- <span>FB</span> -->
-        <!-- <span>G+</span> -->
-      <!-- </div> -->
     </div>
     <!-- Feedback -->
     <div class="row spacer" style="margin:0;">
-      <div class="col-md-12" style="padding:2em 0 2em 0;">
+      <div class="col-md-12 footer-bot-row">
           <div class="col-md-6">
             <p class="copyright"> © 2016 All rights reserved. Fusion Recruiting Labs, Inc.</p>
           </div>
@@ -434,36 +479,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <!-- /Scroll To Top -->
 
-<!-- Modal: Result Message -->
-<!-- <div class="modal fade" id="result" role="dialog"> -->
-    <!-- <div class="modal-dialog"> -->
-        <!-- <div class="modal-content"> -->
-
-            <!-- <div class="modal-header"> -->
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> -->
-                    <!-- <i class="fa fa-times"></i> -->
-                <!-- </button> -->
-                <!-- <h4 class="modal-title">Sending message</h4> -->
-            <!-- </div> -->
-
-            <!-- <div class="modal-body"> -->
-
-                <!-- <div class="result-icon"> -->
-                    <!-- <div class="icon-border"> -->
-                        <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" preserveAspectRatio="none"> -->
-                            <!-- <circle cx="8" cy="8" r="6.215" transform="rotate(90 8 8)"></circle> -->
-                        <!-- </svg> -->
-                        <!-- <i class="icon fa fa-check"></i> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-
-                <!-- <p class="modal-result h4 text-center"></p> -->
-            <!-- </div> -->
-
-        <!-- </div> -->
-    <!-- </div> -->
-<!-- </div> -->
-<!-- /Modal: Result Message -->
 
 <!-- SCRIPTS -->
 <script src="js/jquery-2.2.0.min.js"></script>
@@ -478,7 +493,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/general.js"></script>
 <!-- /SCRIPTS -->
-
+<script type="text/javascript">
+// makes sure all slider scripts run properly by starting at top of screen
+  window.onbeforeunload = function(){ 
+    $("#preloader").css('display','flex');
+    $("#preloader").css('background','rgb(255, 255, 255)');
+    window.scrollTo(0,0);
+  }
+</script>
 
 </body>
 </html>

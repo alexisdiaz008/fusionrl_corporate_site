@@ -114,6 +114,19 @@ body {
   font-family: 'Titillium Web', sans-serif;
   background: #f2f3f8;
 }
+#preload-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 2;
+    cursor: pointer;
+}
+
 .demo-header { 
   margin: 4em 0 2em 0;
   color: white;
@@ -193,10 +206,20 @@ div.sub-header.grey-text.center {
   font-size: 2em;
   font-weight: bold;
 }
+
+.mobile-challenges-img {
+  margin-top: -9em;
+}
+
 .mobile-challenges {
-  box-shadow: 5px 10px 73px #888888;
-  position: inherit;
-  top:-270px;
+  /*position: inherit;
+  top:-270px;*/
+  margin-top: -2em;
+  margin-bottom: 14em;
+}
+
+.slide-1 {
+  margin-top: 2em;
 }
 
 .vertical-below-middle {
@@ -210,6 +233,8 @@ div.sub-header.grey-text.center {
   transform: translateY(-50%);
 }
 
+@media (max-width: 768px) {
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -322,6 +347,8 @@ img.features {
 .main-container {
   z-index: 2;
   /*overflow: hidden;*/
+  top: -100px;
+  position: relative;
 }
 .section {
   padding-top: 100px;
@@ -1310,6 +1337,18 @@ display: block;
   max-width: 100%;
   overflow: hidden;
 }
+div.owl-theme.how-it-works {
+  height: 562px;
+}
+.slider div.how-it-works-bg {
+  height: 562px;
+  max-width: 100%;
+  overflow: hidden;
+}
+div.slider.owl-carousel.owl-theme {
+  background: #0e0e12;
+}
+
 .slider .item img {
     max-width: 160%;
 }
@@ -1320,6 +1359,18 @@ display: block;
   right: 0;
   margin: auto;
   text-align: center;
+}
+
+.slide-ellipse {
+  margin-left: 2em;
+}
+
+.p-header {
+  font-size: 1.5em;
+}
+
+.white-rect-und {
+  margin: .5em 0;
 }
 .slider .owl-controls .owl-pagination .owl-page {
   line-height: 24px;
@@ -1337,7 +1388,8 @@ display: block;
   border: solid 1px #fff;
 }
 .slider .owl-controls .owl-pagination .owl-page.active span {
-  background: #fff;
+  background: #FF6603;
+  border: solid 1px #FF6603;
 }
 /*
  * Slide Mask
@@ -1860,8 +1912,14 @@ display: block;
   margin: 0 4em;
  }
 
+.footer-bot-row {
+  padding:4em 0;
+}
+
  .footer-top-row {
-    border-bottom: 1px solid #4e4e4e;
+  margin: 0;
+  padding: 1em 0;
+  border-bottom: 1px solid #4e4e4e;
  }
 
 .logo-footer {
@@ -1873,6 +1931,7 @@ display: block;
   .logo-footer {
   width: 60%;  
   }
+      height: 9em;
 }
 /*@media (max-width: 968px) {
   .logo-footer {
