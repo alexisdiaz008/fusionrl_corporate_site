@@ -10,11 +10,11 @@ require 'better_errors'
 end
 
 get '/?' do
-  File.read(File.join('index.html'))
+  File.read(File.join('index.erb'))
 end
 
 get '/contact' do
-  File.read(File.join('contact.html'))
+  File.read(File.join('contact.erb'))
 end
 
 post '/mail' do
