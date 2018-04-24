@@ -103,6 +103,9 @@ html {
   height: 100%;
   min-height: 100%;
 }
+.font-weight-bold {
+  font-weight: bold;
+}
 body {
   font-weight: bold;
   height: 100%;
@@ -200,6 +203,10 @@ div.sub-header.grey-text.center {
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .headline {
@@ -404,8 +411,8 @@ img.features {
   padding: 9px 22px;
   font-family: inherit;
   color: #fff !important;
-  border-color: #FF6603 !important;
-  background-color: #FF6603 !important;
+  border-color: #ff6400 !important;
+  background-color: #ff6400 !important;
 }
 .btn:focus,
 .btn.focus {
@@ -792,6 +799,12 @@ p {
 .text-white {
   color: #fff;
 }
+.white-text {
+  color: #fff;
+}
+.black-text {
+  color: black;
+}
 .text-theme {
   color: #FF6603;
 }
@@ -1050,12 +1063,52 @@ label.error {
   -o-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+/*CONTACT PAGE MAP*/
+#map {
+  z-index: -1;
+  height: 32em;
+}
+
+#overlay {
+  background-color: rgba(0,0,0,0.2);
+  z-index: -5;
+  pointer-events: none;
+}
 /*--------------------------------------------------------------------------------------------------------------------
  * Header
  *--------------------------------------------------------------------------------------------------------------------*/
 /*
  * Brand & Navigation
  *--------------------*/
+.background-wrapper{
+  position: absolute;
+  top: -21em;
+  height: 62em;
+  overflow:hidden;
+  width: 100%; /* it is only important to be bigger then parent for one image width size */
+}
+.contact-page-art {
+  margin: 6em 0;
+  width: 82%;
+}
+
+.contact-links-buttons {
+  margin: 0 2em 0 -2em;
+}
+.contact-header-background {
+    position: relative;
+    top: -9em;
+    min-height: 93em;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    width: 100%;
+    min-width: 139em;
+}
 .header {
   height: 96px;
 }
@@ -1068,7 +1121,7 @@ label.error {
   margin-bottom: 0;
   min-height: 1px;
   font-size: 13px;
-  background: none;
+  /*background: none;*/
   border: none;
   /*
    * Navigation Style: Fill
@@ -1082,6 +1135,15 @@ label.error {
    * Affixed Navigation
    *-----------------------------*/
   /* /Affixed Navigation */
+}
+.leave-message {
+  float: left;
+}
+
+.get-to-know-us {
+  font-weight: bold;
+  margin: 0 0 12px;
+  text-align: center;
 }
 
 /*after top row border fade*/
@@ -1098,7 +1160,18 @@ display: block;
 /*margin-bottom: 10px;*/
     /*margin-top: 10px;*/
 }
+.bottom-border-fade-theme { 
+}
 
+.bottom-border-fade-theme:after {
+    content: "";
+    height: 1px;
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(255,102,3,1) 50%,rgba(0,0,0,0) 100%);
+
+display: block;
+/*margin-bottom: 10px;*/
+    /*margin-top: 10px;*/
+}
 .navbar .information {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -1367,6 +1440,11 @@ div.slider.owl-carousel.owl-theme {
 
 .p-header {
   font-size: 1.5em;
+}
+
+.orange-rect-und {
+  margin-top: -3px;
+  text-align: center;
 }
 
 .white-rect-und {

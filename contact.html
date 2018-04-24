@@ -43,7 +43,10 @@
 <!-- Header -->
 <header id="home" class="header">
     <!-- Navigation -->
-    <nav id="navigation" class="navbar" style="background:#444444;"><!-- class"affix" makes an element stay on the screen, in this case the header-->
+    <div class="background-wrapper">
+        <img src="images/home-background.png" class="contact-header-background">
+    </div>
+    <nav id="navigation" class="navbar" ><!-- class"affix" makes an element stay on the screen, in this case the header-->
 
         <!-- Company Information -->
         <div class="information hidden-sm hidden-xs bottom-border-fade">
@@ -131,59 +134,140 @@
 
 
     <!-- Section: Contact -->
-    <section class="section" style="padding-top:15em;">
+    <section class="section" style="padding-top:25em;">
         <div class="container">
 
             <!-- Section Header -->
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <header class="text-center">
-                        <h2 class="section-title"> Connect with <span class="text-theme">us</span></h2>
+                        <h4 class="text-white" style="margin:1em;"> Stay Connected, write your concerns</h4>
+                        <h2 class="text-theme get-to-know-us">GET TO KNOW US</div>
+                        <div class="col-md-12 orange-rect-und">
+                            <img src="images/orange-rect.png">
+                        </div>
                     </header>
                 </div>
             </div>
             <!-- /Section Header -->
 
             <!-- Section Content -->
-            <div class="row section-content">
-
-                <!-- Contact Form -->
-                <p class="section-subtitle text-center">Have a question? Need to tell us something? Use the form below and we’ll get back to you quickly!</p><br>
-
-                <div  id="contact" class="col-md-8 col-md-offset-2 contact-form fadeIn wow">
-                    <form action="/mail" method="post">
-
-                        <input type="hidden" name="form" value="Contact">
-
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name... *" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="email" name="email" class="form-control" placeholder="E-mail address... *" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-12">
-                                <textarea name="message" class="form-control" placeholder="Message... "></textarea>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-12 text-center">
-                                <button type="submit" value="Send" class="btn btn-theme"><i class="fa fa-fw fa-paper-plane-o"></i> Send Message</button>
-                            </div>
-                        </div>
-
-                    </form>
+            <div class="container" style="padding:7em 0 0 0;">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 fadeIn wow">
+                  <div class="col-sm-8 col-md-8">
+                    <h1 class="text-theme font-weight-bold" style="margin:0 0 20px;">Fusion Recruit</h1>
+                    <div class="text-black h4" style="font-weight:bold;">
+                      The FIRST mobile-first candidate search experience platform built for agency and corporate recruiters.
+                    </div>
+                    <div class="text-black h5 font-weight-bold">
+                      <span class="fa fa-angle-right"></span> Increases Mobile Candidate application rates
+                    </div>
+                    <div class="text-black h5 font-weight-bold">
+                      <span class="fa fa-angle-right"></span> Filters unqualified candidates to increase Recruiter Productivity
+                    </div>
+                    <div class="text-black h5 font-weight-bold">
+                      <span class="fa fa-angle-right"></span> Customized to Company Brand &amp; Experience
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="images/contact-page-art.png" class="contact-page-art">
+                  </div>
                 </div>
+                <!-- Contact Form -->
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 contact-form fadeIn wow">
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2>
+                          <p class="section-subtitle text-center pull-left font-weight-bold">
+                            LEAVE MESSAGE
+                          </p>
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                        <img src="images/orange-rect.png" class="pull-left" style="width:30%;margin:1em 0;">
+                      </div>
+                    </div>
+                    <br>
+                    <form action="/mail" method="post">
+                      <input type="hidden" name="form" value="Contact">
+                      <div class="row">
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="email" name="company" class="form-control" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="email" name="email" class="form-control" placeholder="Business Email" required>
+                        </div>
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="email" name="phone" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="email" name="role" class="form-control" placeholder="Role You Play In Hiring" required>
+                        </div>
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="email" name="region" class="form-control" placeholder="Region" required>
+                        </div>
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <textarea name="message" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <button type="submit" value="Send" class="pull-left btn btn-theme">Send A Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 <!-- /Contact Form -->
-
-
+              <div class="bottom-border-fade-theme col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" style="padding:4em"></div>
+              <div class="row center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="mailto:support@fusionrl.com" class="black-text" target="_top">
+                    <img src="images/mail-ellipse.png" class="contact-links-buttons col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: .7em;">
+                      <div class="section-subtitle left center font-weight-bold">
+                        MAIL US
+                      </div>
+                      <div class="left">
+                        support@fusionrl.com
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="tel:844-205-2555" class="black-text">
+                    <img src="images/cell-ellipse.png" class="contact-links-buttons col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: .7em;">
+                        <div class="section-subtitle left center font-weight-bold">
+                          CALL US
+                        </div>
+                        <div class="left">
+                        844-205-2555
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="https://maps.google.com/maps?q=280+NJ-35+%23302,+Red+Bank,+NJ+07701" class="iframe-popup black-text">
+                    <img src="images/house-ellipse.png" class="contact-links-buttons col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: .7em;">
+                      <div class="section-subtitle left center font-weight-bold">
+                        VISIT US
+                      </div>
+                      <div class="left">
+                      280 Highway 35 South, Suite 302, Red Bank, NJ 07701
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
             <!-- /Section Content -->
-
         </div>
     </section>
     <!-- /Section: Contact -->
@@ -218,6 +302,10 @@
 </div>
 <!-- /Modal: Result Message -->
 
+<!-- GOOGLE MAPS -->
+<!-- <div id="overlay"> -->
+    <div id="map"></div>
+<!-- </div> -->
 <!-- Footer -->
 <!-- Footer Starts -->
 <div class="footer text-center spacer container">
@@ -268,3 +356,32 @@
 
 </body>
 </html>
+<script>
+  function initMap() {
+    var nj_office = new google.maps.LatLng(40.366670, -74.084579)
+
+    var mapOptions = {
+      zoom: 17,
+      center: nj_office,
+      styles: [{
+        stylers: [{
+          saturation: -60
+        },
+        {
+          lightness: -30
+        }]
+      }]
+    };
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: nj_office,
+      map: map
+    });
+  }
+
+
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZv829lGauqfOX5EvbiIcQBoAbiftWNWE&callback=initMap">
+</script>
