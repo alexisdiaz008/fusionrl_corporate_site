@@ -215,7 +215,9 @@ div.sub-header.grey-text.center {
 }
 
 .mobile-challenges-img {
-  margin-top: -9em;
+  z-index: 12;
+  margin-top: -14em;
+  position: relative;
 }
 
 .mobile-challenges {
@@ -225,8 +227,9 @@ div.sub-header.grey-text.center {
   margin-bottom: 14em;
 }
 
-.slide-1 {
+.slide-m-w {
   margin-top: 2em;
+  width:100%;
 }
 
 .vertical-below-middle {
@@ -1398,9 +1401,27 @@ display: block;
 /*--------------------------------------------------------------------------------------------------------------------
  * Slider
  *--------------------------------------------------------------------------------------------------------------------*/
-/*
+/* 
  * Main
  *------*/
+.dice-logo-slide {
+  background: url(../images/dice-logo.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  height: 4em;
+  width: 100%;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+ 
+.hiw-slider {
+  height:36em;
+} 
+#slide-logo-cont {
+  background-color: #e5e7ea;
+  padding: 1em 5em;
+  border-radius: 4px;
+}
+
 .slider {
   width: 100%;
   max-width: 100%;
@@ -1409,6 +1430,10 @@ display: block;
   height: 900px;
   max-width: 100%;
   overflow: hidden;
+}
+
+.owl-pagination {
+  display: none;
 }
 div.owl-theme.how-it-works {
   height: 562px;
