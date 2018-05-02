@@ -1412,7 +1412,13 @@ display: block;
   overflow: hidden;
   color: #FFFFFF;
 }
- 
+.touch-point {
+  width: 17%;
+  position: absolute;
+  height: 62%;
+  float: left;
+  margin: 7% 16%;
+}
 .hiw-slider {
   height:36em;
 } 
