@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'pony'
 
+# set :public_dir, File.expand_path(__dir__, 'public')
+
 configure :development do
 require 'better_errors'
   use BetterErrors::Middleware
@@ -16,6 +18,15 @@ end
 get '/contact' do
   File.read(File.join('contact.erb'))
 end
+
+get '/downloads/:file' do |file|
+  pdf_file = File.read(File.join('public/files/', file))
+  attachment(pdf_file,:disposition => 'attachment', :filename => File.basename(file), :type => "application/octet-stream")
+  # response.headers['Content-Transfer-Encoding'] = "binary"
+  # file = File.join('/public/files/', file)
+  # send_file(file,:disposition => 'attachment', :filename => File.basename(file), :type => "application/octet-stream")
+end
+
 
 post '/mail' do
   # p request.path_info

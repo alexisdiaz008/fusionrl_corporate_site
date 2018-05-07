@@ -89,7 +89,13 @@ $(function($) {
         }
     });
         $('#scroll-to-features').click(function() {
-        $.scrollWindow($('#feature').height()+1050);
+        $.scrollWindow($('#feature').height()+850);
+    });
+    $('#scroll-to-study').click(function() {
+        $.scrollWindow($('#study').height()+2350);
+    });
+    $('#scroll-to-demo').click(function() {
+        $.scrollWindow($('#demo').height()+4250);
     });
     $('#scroll-to-contact').click(function() {
         $.scrollWindow(2900);
