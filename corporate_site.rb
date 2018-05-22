@@ -51,8 +51,6 @@ post '/mail' do
                       #{params[:last_name]},\n
                       #{params[:email]},\n
                       #{params[:phone]},\n
-                      #{params[:role]},\n
-                      #{params[:region]},\n
                       #{params[:message]}")
 	redirect('/?')
 end
