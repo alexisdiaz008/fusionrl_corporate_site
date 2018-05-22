@@ -44,15 +44,15 @@ post '/mail' do
                      :domain         => 'heroku.com'
                     }
                  }
-  Pony.mail(subject: "A message from #{params[:name]}",
+  Pony.mail(subject: "A message from #{params[:first_name]}",
                  to: 'support@fusionrl.com, lex@fusionrl.co',
-               body: "{params[:first_name]},\n
-                      {params[:company]},\n
-                      {params[:last_name]},\n
-                      {params[:email]},\n
-                      {params[:phone]},\n
-                      {params[:role]},\n
-                      {params[:region]},\n
+               body: "#{params[:first_name]},\n
+                      #{params[:company]},\n
+                      #{params[:last_name]},\n
+                      #{params[:email]},\n
+                      #{params[:phone]},\n
+                      #{params[:role]},\n
+                      #{params[:region]},\n
                       #{params[:message]}")
 	redirect('/?')
 end
