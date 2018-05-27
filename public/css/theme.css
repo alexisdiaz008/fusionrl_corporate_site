@@ -243,75 +243,6 @@ div.sub-header.grey-text.center {
   transform: translateY(-50%);
 }
 
-@media (max-width: 768px) {
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (max-width: 992px) {
-  .mac-and-phone {
-    margin: 8em 0 0 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-@media (min-width: 1400px) {
-  .vertical-below-middle {
-    right: -14%;
-  }
-}
-
-@media (min-width: 1600px) {
-  .vertical-below-middle {
-    right: -35%;
-  }
-}
-@media (min-width: 1800px) {
-  .vertical-below-middle {
-    right: -55%;
-  }
-}
-@media (min-width: 1960px) {
-  .vertical-below-middle {
-    right: -85%;
-  }
-}
-@media (min-width: 2180px) {
-  .vertical-below-middle {
-    right: -100%;
-  }
-}
-@media (min-width: 2180px) {
-  .vertical-below-middle {
-    right: -120%;
-  }
-}
-@media (min-width: 2400px) {
-  .vertical-below-middle {
-    right: -140%;
-  }
-}
-@media (min-width: 2600px) {
-  .vertical-below-middle {
-    right: -190%;
-  }
-}
-/*@media (min-width: 2100px) {
-  .container {
-    width: 100%;
-  }
-}*/
 
 .footer {
     padding-top: 1.5em;
@@ -2705,3 +2636,80 @@ div.slider.owl-carousel.owl-theme {
     display: none;
   }
 }
+
+
+@media (max-width: 768px) {
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .slide-ellipse {
+    margin: 0 0 0 2em;
+  }
+  .mac-and-phone {
+    margin: 8em 0 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.vertical-middle.job-application {
+    padding: 0;
+  }
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .vertical-below-middle {
+    right: -14%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .vertical-below-middle {
+    right: -35%;
+  }
+}
+@media (min-width: 1800px) {
+  .vertical-below-middle {
+    right: -55%;
+  }
+}
+@media (min-width: 1960px) {
+  .vertical-below-middle {
+    right: -85%;
+  }
+}
+@media (min-width: 2180px) {
+  .vertical-below-middle {
+    right: -100%;
+  }
+}
+@media (min-width: 2180px) {
+  .vertical-below-middle {
+    right: -120%;
+  }
+}
+@media (min-width: 2400px) {
+  .vertical-below-middle {
+    right: -140%;
+  }
+}
+@media (min-width: 2600px) {
+  .vertical-below-middle {
+    right: -190%;
+  }
+}
+/*@media (min-width: 2100px) {
+  .container {
+    width: 100%;
+  }
+}*/
