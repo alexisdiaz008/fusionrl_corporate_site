@@ -19,6 +19,14 @@ get '/contact' do
   File.read(File.join('contact.erb'))
 end
 
+get '/privacy' do
+  File.read(File.join('privacy.erb'))
+end
+
+get '/terms' do
+  File.read(File.join('terms.erb'))
+end
+
 get '/downloads/:file' do |file|
   pdf_file = File.read(File.join('public/files/', file))
   attachment(pdf_file,:disposition => 'attachment', :filename => File.basename(file), :type => "application/octet-stream")
