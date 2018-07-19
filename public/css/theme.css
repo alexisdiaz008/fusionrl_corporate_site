@@ -1015,6 +1015,11 @@ label.error {
 /*
  * Brand & Navigation
  *--------------------*/
+ @media (max-width: 468px) {
+  .height-100p {
+    height: 92%;
+  }
+}
 .background-wrapper{
   position: absolute;
   top: -21em;
@@ -1971,7 +1976,6 @@ div.slider.owl-carousel.owl-theme {
   .logo-footer {
   width: 60%;  
   }
-      height: 9em;
 }
 /*@media (max-width: 968px) {
   .logo-footer {
