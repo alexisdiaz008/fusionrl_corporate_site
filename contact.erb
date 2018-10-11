@@ -116,7 +116,7 @@
                     <div id="main-menu" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li id="scroll-to-home" class="scroll-to-home"><a href="/">Home</a></li>
-                            <li id="scroll-to-contact" class="scroll-to-contact" style="text-decoration:none;"><a href="#">Contact</a></li>
+                            <li id="scroll-to-contact" class="scroll-to-contact" style="text-decoration:none;"><a href="/contact">Contact</a></li>
                             <li id="scroll-to-contact" style="text-decoration:none;"><a href="https://recruit.fusion-recruit.com/3/job_descriptions">Careers</a></li>
                         </ul>
                     </div>
@@ -153,7 +153,7 @@
 
             <!-- Section Content -->
             <div class="container" style="padding:7em 0 0 0;">
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 fadeIn wow">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 fadeIn wow" id="contactleft">
                   <div class="col-sm-8 col-md-8">
                     <h1 class="text-theme font-weight-bold" style="margin:0 0 20px;">Fusion Recruit</h1>
                     <div class="text-black h4" style="font-weight:bold;">
@@ -171,7 +171,7 @@
                   </div>
                 </div>
                 <!-- Contact Form -->
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 contact-form fadeIn wow">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 contact-form fadeIn wow" id="contactright">
                     <div class="row">
                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h2>
@@ -216,11 +216,11 @@
                   </div>
                 <!-- /Contact Form -->
               <div class="bottom-border-fade-theme col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" style="padding:4em"></div>
-              <div class="row center">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" id="mailicon">
                   <a href="mailto:support@fusionrl.com" class="black-text" target="_top">
                     <img src="images/mail-ellipse.png" class="contact-links-buttons col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: .7em;">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-top: .7em;">
                       <div class="section-subtitle left center font-weight-bold">
                         MAIL US
                       </div>
@@ -230,10 +230,10 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" id="callicon">
                   <a href="tel:844-205-2555" class="black-text">
                     <img src="images/cell-ellipse.png" class="contact-links-buttons col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: .7em;">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-top: .7em;">
                         <div class="section-subtitle left center font-weight-bold">
                           CALL US
                         </div>
@@ -243,10 +243,10 @@
                       </div>
                     </a>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" id="visiticon">
                   <a href="https://maps.google.com/maps?q=280+NJ-35+%23302,+Red+Bank,+NJ+07701" class="iframe-popup black-text">
                     <img src="images/house-ellipse.png" class="contact-links-buttons col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: .7em;">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-top: .7em;">
                       <div class="section-subtitle left center font-weight-bold">
                         VISIT US
                       </div>
@@ -306,10 +306,10 @@
       </div>
       <div class="col-md-6 col-xs-12 col-sm-12 center">
         <ul class="nav navbar-nav">
-            <li class="scroll-to-home" onclick="$.scrollWindow(300);"><a href="#">Home</a></li>
-            <li id="scroll-to-about" class="scroll-to-challenges" onclick="$.scrollWindow(732);"><a href="#">Mobile Challenges</a></li>
-            <li class="scroll-to-features" onclick="$.scrollWindow(1617);"><a href="#">How It Works</a></li>
-            <li class="scroll-to-contact" style="text-decoration:none;"  onclick="$.scrollWindow(2900);"><a href="#">Contact</a></li>
+            <li class="scroll-to-home" onclick="$.scrollWindow(300);"><a href="/">Home</a></li>
+            <li id="scroll-to-about" class="scroll-to-challenges" onclick="$.scrollWindow(732);"><a href="/">Mobile Challenges</a></li>
+            <li class="scroll-to-features" onclick="$.scrollWindow(1617);"><a href="/">How It Works</a></li>
+            <li style="text-decoration:none;"><a href="/contact">Contact</a></li>            
             <li style="text-decoration:none;"><a href="https://recruit.fusion-recruit.com/3/job_descriptions">Careers</a></li>
         </ul>
       </div>
@@ -318,7 +318,7 @@
     <div class="row spacer" style="margin:0;">
       <div class="col-md-12 footer-bot-row">
           <div class="col-md-6">
-            <p class="copyright"> © 2016 All rights reserved. Fusion Recruiting Labs, Inc.</p>
+            <p class="copyright"> © 2018 All rights reserved. Fusion Recruiting Labs, Inc.</p>
           </div>
           <div class="col-md-6">
           </div>

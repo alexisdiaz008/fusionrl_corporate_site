@@ -2639,6 +2639,26 @@ div.slider.owl-carousel.owl-theme {
   .footer hr {
     display: none;
   }
+
+  #contactleft {
+    width: 100% !important;
+  }
+
+  #contactright {
+    width: 100% !important;
+  }
+
+  #callicon {
+    width: 100% !important;
+  }
+
+  #visiticon {
+    width: 100% !important;
+  }
+
+  #mailicon {
+    width: 100% !important;
+  }
 }
 
 
@@ -2646,7 +2666,7 @@ div.slider.owl-carousel.owl-theme {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -2668,7 +2688,7 @@ div.slider.owl-carousel.owl-theme {
     padding: 0;
   }
   .container {
-    width: 1170px;
+    width: 100% !important;
   }
 }
 @media (min-width: 1400px) {
