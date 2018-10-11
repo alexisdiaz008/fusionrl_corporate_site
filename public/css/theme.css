@@ -2650,14 +2650,17 @@ div.slider.owl-carousel.owl-theme {
 
   #callicon {
     width: 100% !important;
+    padding-left:30px;
   }
 
   #visiticon {
     width: 100% !important;
+    padding-left:30px;
   }
 
   #mailicon {
     width: 100% !important;
+    padding-left:30px;
   }
 }
 
@@ -2681,6 +2684,10 @@ div.slider.owl-carousel.owl-theme {
   .mac-and-phone {
     margin: 8em 0 0 0;
   }
+
+  #mailicon {
+    padding-left:30px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2689,6 +2696,9 @@ div.slider.owl-carousel.owl-theme {
   }
   .container {
     width: 100% !important;
+  }
+  #mailicon {
+    padding-left:30px;
   }
 }
 @media (min-width: 1400px) {
