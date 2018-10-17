@@ -1193,6 +1193,7 @@ display: block;
 .navbar .nav {
   text-transform: uppercase;
 }
+
 .navbar .nav li a {
   margin: 15px 5px;
   padding: 7px 15px;
@@ -1206,6 +1207,7 @@ display: block;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  background-color:black;opacity:0.8;
 }
 .navbar .nav li a:hover,
 .navbar .nav li a.hover,
@@ -2662,6 +2664,7 @@ div.slider.owl-carousel.owl-theme {
     width: 100% !important;
     padding-left:30px;
   }
+
 }
 
 
