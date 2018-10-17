@@ -1207,7 +1207,8 @@ display: block;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color:black;opacity:0.8;
+  background-color: #FF6300;
+  opacity:0.8;
 }
 .navbar .nav li a:hover,
 .navbar .nav li a.hover,
