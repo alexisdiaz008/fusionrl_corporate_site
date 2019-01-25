@@ -53,7 +53,7 @@ post '/mail' do
                     }
                  }
   Pony.mail(subject: "A message from #{params[:first_name]}",
-                 to: 'support@fusionrl.com, lex@fusionrl.co',
+                 to: 'support@fusionrl.com',
                body: "#{params[:first_name]},\n
                       #{params[:company]},\n
                       #{params[:last_name]},\n
