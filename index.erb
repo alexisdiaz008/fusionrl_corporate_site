@@ -27,6 +27,45 @@
   ga('create', 'UA-73541965-1', 'auto');
   ga('send', 'pageview');
 </script>
+<style>
+
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+</style>
 </head>
     <script type="text/javascript"> 
     var _ss = _ss || []; _ss.push(['_setDomain', 'https://koi-3QN97K7VHS.marketingautomation.services/net']); _ss.push(['_setAccount', 'KOI-3TLBZ2SWPU']); _ss.push(['_trackPageView']); (function() { var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true; ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QN97K7VHS.marketingautomation.services/client/ss.js?ver=1.1.1'; var scr = document.getElementsByTagName('script')[0]; scr.parentNode.insertBefore(ss, scr); })();
@@ -49,9 +88,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- /Preloader -->
 
 <!-- Header -->
-<header id="home" class="header">
+<header id="home" class="header" >
     <!-- Navigation -->
-    <nav id="navigation" class="navbar"><!-- class"affix" makes an element stay on the screen, in this case the header-->
+    <nav id="navigation" class="navbar" ><!-- class"affix" makes an element stay on the screen, in this case the header-->
 
         <!-- Company Information -->
         <div class="information hidden-sm hidden-xs bottom-border-fade">
@@ -78,7 +117,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="container" style="padding: 28px;">
 
-            <div class="row">
+            <div class="row" style="z-index:10">
                 <div class="col-md-12">
 
                     <!-- Navigation Header -->
@@ -119,7 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     <!-- Navigation -->
                     <div id="main-menu" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right" style=" z-index: 3">
                             <li id="scroll-to-home" class="scroll-to-home"><a href="/">Home</a></li>
                             <li id="scroll-to-about" class="scroll-to-challenges"><a href="#">Mobile Challenges</a></li>
                             <li id="scroll-to-features" class="scroll-to-features"><a href="#">How It Works</a></li>
@@ -127,6 +166,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <li id="scroll-to-demo" class="scroll-to-demo"><a href="#">Request a Demo</a></li>
                             <li id="scroll-to-contact" class="scroll-to-contact" style="text-decoration:none;"><a href="/contact">Contact</a></li>
                             <li id="scroll-to-contact" style="text-decoration:none;"><a href="https://recruit.fusion-recruit.com/3/job_descriptions" target="_blank">Careers</a></li>
+                            <li><a href="https://recruit.fusion-recruit.com/users/sign_in" style="background-color:#FF6603;color:black;">Log in to Fusion Recruit</a></li>
                         </ul>
                     </div>
                     <!-- /Navigation -->
